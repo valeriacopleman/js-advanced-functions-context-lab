@@ -1,5 +1,19 @@
 /* Your Code Here */
+function createEmployeeRecord(employee) {
+    let record = {
+        firstName: employee[0],
+        familyName: employee[1],
+        title: employee[2],
+        payPerHour: employee[3],
+        timeInEvents: [],
+        timeOutEvents: []
+    }
+    return record;
+}
 
+function createEmployeeRecords(employees) {
+    return employees.map(createEmployeeRecord)
+}
 /*
  We're giving you this function. Take a look at it, you might see some usage
  that's new and different. That's because we're avoiding a well-known, but
